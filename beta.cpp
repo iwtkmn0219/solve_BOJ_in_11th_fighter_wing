@@ -24,9 +24,9 @@ int main(int argv, char* argc[]) {
 				file << "#define REP(i, a, b) for (int i = a; i < b; i++)" << endl;
 				file << "#define REPR(i, a, b) for (int i = a; i >= b; i--)" << endl;
 				file << "#define VINPUT(v, n) REP(i, 0, n) { int tmp; cin >> tmp; v.PB(tmp); }" << endl;
-				file << "#define VOUTPUT(v) REP(i, 0, v.size()) { cout << v[i] << " "; }" << endl;
+				file << "#define VOUTPUT(v) REP(i, 0, v.size()) { cout << v[i] << \" \"; }" << endl;
 				file << "#define V2DINPUT(v, n, m) REP(i, 0, n) { vi tmpv; REP(j, 0, m) { int tmp; cin >> tmp; tmpv.PB(tmp); } v.PB(tmpv); }" << endl;
-				file << "#define V2DOUTPUT(v) REP(i, 0, v.size()) { REP(j, 0, v[i].size()) { cout << v[i][j] << " "; } cout << endl; }" << endl;
+				file << "#define V2DOUTPUT(v) REP(i, 0, v.size()) { REP(j, 0, v[i].size()) { cout << v[i][j] << \" \"; } cout << endl; }" << endl;
 				file << "#define WATCH(x) cout << #x << \" : \" << x << endl" << endl;
 				file << "#define DEBUG(x) cout << \"DB - \" << x << endl" << endl;
 				file << "#define PRINT(x) cout <<  x << endl" << endl;
