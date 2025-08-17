@@ -20,7 +20,6 @@ int main(int argv, char* argc[]) {
 				file << "#define F first" << endl;
 				file << "#define S second" << endl;
 				file << "#define PB push_back" << endl;
-				file << "#define MP make_pair" << endl;
 				file << "#define REP(i, a, b) for (int i = a; i < b; i++)" << endl;
 				file << "#define REPR(i, a, b) for (int i = a; i >= b; i--)" << endl;
 				file << "#define VINPUT(v, n) REP(i, 0, n) { int tmp; cin >> tmp; v.PB(tmp); }" << endl;
@@ -30,6 +29,8 @@ int main(int argv, char* argc[]) {
 				file << "#define WATCH(x) cout << #x << \" : \" << x << endl" << endl;
 				file << "#define DEBUG(x) cout << \"DB - \" << x << endl" << endl;
 				file << "#define PRINT(x) cout <<  x << endl" << endl;
+				file << "#define NVOUTPUT(x)" << endl;
+				file << "#define NV2DOUTPUT(x)" << endl;
 				file << "#define NWATCH(x)" << endl;
 				file << "#define NDEBUG(x)" << endl;
 				file << "#define NPRINT(x)" << endl;
