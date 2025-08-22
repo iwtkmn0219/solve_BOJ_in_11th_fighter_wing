@@ -2,3 +2,6 @@
 .ccls-cache
 # 실행파일
 *.exe
+# 바이너리 파일
+alpha
+iwtkmn
