@@ -16,12 +16,15 @@ int main(int argv, char* argc[]) {
 				file << "#define INF 1e9" << endl;
 				file << "#define dir4 {{-1, 0}, {0, 1}, {1, 0}, {0, -1}}" << endl;
 				file << "#define dir8 {{-1, 0}, {-1, 1}, {0, 1}, {1, 1}, {1, 0}, {1, -1}, {0, -1}, {-1, -1}}" << endl;
+				file << "#define board_condition(row, col, n, m) (row >= 0 && row < n && col >= 0 && col < m)" << endl;
 				file << "#define FASTIO cin.tie(0), cout.tie(0), ios::sync_with_stdio(0)" << endl;
 				file << "#define F first" << endl;
 				file << "#define S second" << endl;
 				file << "#define PB push_back" << endl;
 				file << "#define REP(i, a, b) for (int i = a; i < b; i++)" << endl;
-				file << "#define REPR(i, a, b) for (int i = a; i >= b; i--)" << endl;
+				file << "#define SORT(x) sort(x.begin(), x.end())" << endl;
+				file << "#define REV(x) reverse(x.begin(), x.end())" << endl;
+				file << "#define UNIQUE(x) x.erase(unique(x.begin(), x.end()), x.end())" << endl;
 				file << "#define VINPUT(v, n) REP(i, 0, n) { int tmp; cin >> tmp; v.PB(tmp); }" << endl;
 				file << "#define VOUTPUT(v) REP(i, 0, v.size()) { cout << v[i] << \" \"; } cout << endl" << endl;
 				file << "#define V2DINPUT(v, n, m) REP(i, 0, n) { vi tmpv; REP(j, 0, m) { int tmp; cin >> tmp; tmpv.PB(tmp); } v.PB(tmpv); }" << endl;
@@ -58,7 +61,7 @@ int main(int argv, char* argc[]) {
 		} 
 		// compile file
 		else if (strcmp(argc[2], "c") == 0) {
-			string command = "g++ " + string(argc[1]) + ".cpp -o " + string(argc[1]);
+			string command = "g++ " + string(argc[1]) + ".cpp -o iwtkmn";
 			system(command.c_str());
 			cout << "Compile done" << endl;
 		}
