@@ -1,4 +1,4 @@
-*
-!*.cpp
-!beta.exe
-!solved/
+# 캐시파일
+.ccls-cache
+# 실행파일
+*.exe
